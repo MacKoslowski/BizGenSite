@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="bizgen.css">
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -17,64 +18,144 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    
-    <div class="container">
-        <div class="header clearfix" >
-         
-          
-          <div class='col-md-6' >
+  <body style="background-color: #f0f0f0;">
+    <div class="navbar navbar-default navbar-fixed-top" style='color:white; background-color: black;''> 
+      <div class="navbar-header"><a class="navbar-brand" style='color:white; background-color: black;'>BizGen Solutions</a>
+           <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </a>
+         </div>
+         <div class="navbar-collapse collapse">
+           <ul class="nav navbar-nav">
+             <li class="active" id='homeWrap'><a id='homeNav'>Home</a></li>
+             <li id='consumerWrap'><a id='consumerNav'>Consumer</a></li>
+             <li id='businessWrap'><a id='businessNav'>Business</a></li>
+             <li id='contactWrap'><a id='contactNav'>Contact</a></li>
+           </ul>
+           <!--<form class="navbar-form navbar-left" role="search">
+             <div class="form-group">
+               <input type="text" class="form-control" placeholder="Search">
+             </div>
+             <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+           </form>-->
+         </div>
+     </div>
+    <div class="container" style='margin-top:3.5em;'>
+      <div class='row'>
+       
+          <div class="marketing">
             
-            <nav style='margin-top:1em'>
+            <div class="col-lg-12 " id='home'>
+              <div class="row text-center" >
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="float:none; padding-right: 0px;">  
+                    <img class="img-responsive imageCenter" src="./resources/bizgen_logo.png" />    <!--Mobile-->
+                </div>
+                <div class="hidden-xs col-sm-12 hidden-md hidden-lg">
+                    <img class="img-responsive imageCenter" style="float:none; padding-right:10px; height:60%;" src="./resources/bizgen_logo.png" />   <!--Tab-->
+                </div>
+                <div class="hidden-xs hidden-sm col-md-12 hidden-lg">
+                    <img class="img-responsive imageCenter" style="float:none; padding:0px;" src="./resources/bizgen_logo.png" />   <!--Desktop-->
+                </div>
+                <div class="hidden-xs hidden-sm hidden-md col-lg-12">
+                    <img class="img-responsive imageCenter" style="float:none; padding:0px; " src="/resources/bizgen_logo.png" />  <!--Large-->
+                </div>
+              </div>
+                <div class='row'>
+                  <div class='col-md-6'>
+                    <h4>Subheading</h4>
+                    <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+                    <h4>Subheading</h4>
+                    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+                    <h4>Subheading</h4>
+                    <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                    </div>
+                    <div class='col-md-6'>
+                      <img src="/resources/moving_gif.gif" />  <!--Large-->
+                    </div>
+
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-12 invis" id='consumer'>
+              <div class="row text-center" >
+                <h1><u>Consumer Lending</u></h1>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="float:none; padding-right: 0px;">  
+                    <img class="img-responsive imageCenter" src="./resources/icons8-user-male-128.png" />    <!--Mobile-->
+                </div>
+                <div class="hidden-xs col-sm-12 hidden-md hidden-lg">
+                    <img class="img-responsive imageCenter" style="float:none; padding-right:10px; height:60%;" src="./resources/icons8-user-male-128.png" />   <!--Tab-->
+                </div>
+                <div class="hidden-xs hidden-sm col-md-12 hidden-lg">
+                    <img class="img-responsive imageCenter" style="float:none; padding:0px;" src="./resources/icons8-user-male-128.png" />   <!--Desktop-->
+                </div>
+                <div class="hidden-xs hidden-sm hidden-md col-lg-12">
+                    <img class="img-responsive imageCenter" style="float:none; padding:0px; " src="/resources/icons8-user-male-128.png" />  <!--Large-->
+                </div>
+              </div>
               
-              <ul class="nav nav-pills pull-left">
-              <li role="presentation" style='background-color: black;'><a style='color:white;' href="https://getbootstrap.com/docs/3.4/examples/jumbotron-narrow/#">Home</a></li>
-              <li role="presentation" ><a class='text-dark' style='color:black;' href="https://getbootstrap.com/docs/3.4/examples/jumbotron-narrow/#">Consumer</a></li>
-              <li role="presentation"><a class='text-dark'style='color:black !important;' href="https://getbootstrap.com/docs/3.4/examples/jumbotron-narrow/#">Business</a></li>
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+                <h4>Subheading</h4>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+                <h4>Subheading</h4>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
+            <div class="col-lg-12 invis" id='business'>
+              <div class="row text-center" >
+                <h1><u>Business Lending</u></h1>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="float:none; padding-right: 0px;">  
+                    <img class="img-responsive imageCenter" src="./resources/icons8-briefcase-128.png" />    <!--Mobile-->
+                </div>
+                <div class="hidden-xs col-sm-12 hidden-md hidden-lg">
+                    <img class="img-responsive imageCenter" style="float:none; padding-right:10px; height:60%;" src="./resources/icons8-briefcase-128.png" />   <!--Tab-->
+                </div>
+                <div class="hidden-xs hidden-sm col-md-12 hidden-lg">
+                    <img class="img-responsive imageCenter" style="float:none; padding:0px;" src="./resources/icons8-briefcase-128.png" />   <!--Desktop-->
+                </div>
+                <div class="hidden-xs hidden-sm hidden-md col-lg-12">
+                    <img class="img-responsive imageCenter" style="float:none; padding:0px; " src="/resources/icons8-briefcase-128.png" />  <!--Large-->
+                </div>
+              </div>
               
-              <li role="presentation"><a class='text-dark'style='color:black !important;' href="https://getbootstrap.com/docs/3.4/examples/jumbotron-narrow/#">Contact</a></li>
-              </ul>
-          </nav>
-        
-          </div>
-          <div class='col-md-6'>
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 
-            <!--<h3 class="">BizGen Solutions</h3>-->
-          </div>
-        </div>
+                <h4>Subheading</h4>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
 
-        <div class="jumbotron"  style='height:25em'> 
-          <!--<h1>Jumbotron heading</h1>
-          <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-lg btn-success" href="https://getbootstrap.com/docs/3.4/examples/jumbotron-narrow/#" role="button">Sign up today</a></p>-->
-        </div>
+                <h4>Subheading</h4>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
+            <div class="col-lg-12 invis" id='contact'>
+              <h5>Contact</h5>
+                <h4>Subheading</h4>
+                <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 
-        <div class="marketing">
-          
-          <div class="col-lg-12">
-            <h5>Consumer/Business Lending</h5>
-              <h4>Subheading</h4>
-              <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+                <h4>Subheading</h4>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
 
-              <h4>Subheading</h4>
-              <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-              <h4>Subheading</h4>
-              <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-          </div>
-
-        
-        </div>
-
+                <h4>Subheading</h4>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
+     
+      </div>
         <!--<footer class="footer">
         <p>© 2016 Company, Inc.</p>
         </footer>-->
-
+      </div>
     </div> <!-- /container -->
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="bizgen.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    
   </body>
 </html>

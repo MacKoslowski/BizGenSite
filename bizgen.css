@@ -2,6 +2,8 @@
     background-image: url("./resources/BizGen Solutions cover 2.jpg");
     
     background-size: cover;
+    border-radius: 0 !important;
+    border: 2px solid black;
 }
 
 .imageCenter {
@@ -18,4 +20,15 @@
 
 .invis {
   display: none;
+}
+
+.contentBlock {
+  max-height: 15em;
+  min-height: 15em;
+  border-radius: 0 !important; 
+  border: 2px solid black;
+  padding: 12px;
+  color: black;
+  margin-top: 1em;
+  margin-right:1em;
 }

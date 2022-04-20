@@ -27,12 +27,11 @@
 }
 
 .contentBlock {
-  max-height: 15em;
-  min-height: 15em;
+  max-height: 23em;
+  min-height: 23em;
   border-radius: 0 !important; 
   border: 2px solid black;
-  padding: 7px;
+
   color: black;
-  margin-top: 1em;
-  margin-right:1em;
+  margin:1em;
 }

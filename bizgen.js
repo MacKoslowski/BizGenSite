@@ -2,9 +2,12 @@
 $( document ).ready(function() {
     console.log( "ready!" );
     setUpListener('businessNav', 'business');
+    setUpListener('whoNav', 'who');
     setUpListener('contactNav', 'contact');
     setUpListener('homeNav', 'home');
     setUpListener('consumerNav', 'consumer');
+    setUpListener('applyNav', 'apply');
+    setUpListener('blogNav', 'blog');
 });
 
 const Ids = ['business', 'contact', 'home', 'consumer'];

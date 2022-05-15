@@ -37,5 +37,9 @@
 }
 
 .fancyBlock {
-  background-color: #215a5f; color:white; border: 2px solid black; font-size: 20px; padding:0.5em; text-align: center; margin-top: 2px;
+  color:white;  padding:0.5em; text-align: left; margin-top: 10em;
+}
+
+.nav-size {
+  font-size: 24px;
 }

@@ -10,7 +10,7 @@ $( document ).ready(function() {
     setUpListener('blogNav', 'blog');
 });
 
-const Ids = ['business', 'contact', 'home', 'consumer'];
+const Ids = ['business', 'contact', 'home', 'consumer', 'who', 'apply', 'blog'];
 
 function selectNav(id) {
     let wrapTag = id + 'Wrap';
@@ -18,14 +18,14 @@ function selectNav(id) {
     let wrapString = addHashTag(wrapTag);
     $(idString).removeClass('invis');
     $(wrapString).addClass('active');
-    console.log(wrapString)
+    console.log(idString)
     for(let i = 0; i < Ids.length; i++) {
         let thisID = Ids[i];
         if(thisID != id) {
             let thisIdString = addHashTag(thisID);
             let thisWrapString = addHashTag(thisID + 'Wrap');
+           
             $(thisIdString).addClass('invis');
-
             $(thisWrapString).removeClass('active');
         }
     }

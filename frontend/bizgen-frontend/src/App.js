@@ -14,10 +14,30 @@ import {
   Routes,
   Link
 } from "react-router-dom";
+import React from 'react';
+import { getAuth, signInAnonymously } from "firebase/auth";
+import {app, db, getBlogPosts, addContactMessage, auth} from './firebase_setup';
+
+class App extends React.Component {
+
+  componentDidMount() {
+    signInAnonymously(auth)
+      .then(() => {
+        // Signed in..
+        console.log('we signed in!!!')
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // ...
+        console.log(errorCode, errorMessage)
+      });
+  }  
 
 
-function App() {
-  return (
+  render() {
+    console.log('render?') 
+    return (
     <div >
       <Router>
         <Navbar bg="light" expand="lg">
@@ -63,7 +83,7 @@ function App() {
         </Routes>
       </Router>
     </div>
-  );
+  );}
 }
 
 export default App;

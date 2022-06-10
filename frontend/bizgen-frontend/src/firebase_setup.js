@@ -1,6 +1,7 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
+import { collection, getDocs, addDoc } from 'firebase/firestore';
 
 const firebaseConfig = {
     apiKey: "AIzaSyD2LKaysl4IDx0iiqZsV0Tn6daGOE-cZPg",
@@ -22,14 +23,14 @@ const auth = firebase.auth();
 
 console.log(app)
 async function getBlogPosts(db) {
-    const citiesCol = firebase.collection(db, 'Blog Posts');
-    const citySnapshot = await firebase.getDocs(citiesCol);
+    const citiesCol = collection(db, 'blog_posts');
+    const citySnapshot = await getDocs(citiesCol);
     const cityList = citySnapshot.docs.map(doc => doc.data());
     return cityList;
 }
 
 async function addContactMessage(email, body) {
-    const docRef = await firebase.addDoc(firebase.collection(db, "Contact Messages"), {
+    const docRef = await addDoc(collection(db, "contact_messages"), {
        email: email,
        body: body
       });

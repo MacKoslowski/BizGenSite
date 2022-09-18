@@ -1,4 +1,4 @@
-import {db, getBlogPosts, addContactMessage} from './firebase_setup.js';
+import {getBlogPosts, addContactMessage} from './firebase_setup.js';
 $( document ).ready(function() {
     console.log( "ready!" );
      // TODO: Replace the following with your app's Firebase project configuration
@@ -12,7 +12,7 @@ $( document ).ready(function() {
     setUpListener('blogNav', 'blog');
     setUpContactForm();
     console.log('before')
-    let result = getBlogPosts(db);
+    let result = getBlogPosts();
     result.then(function(posts) {
         console.log(posts)
         let htmlCollection = [];

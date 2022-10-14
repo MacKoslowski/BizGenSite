@@ -1,7 +1,7 @@
 import React from 'react';
 import { getBlogPosts, auth, db} from '../firebase_setup';
 import { signInAnonymously } from "firebase/auth";
-import {Card} from 'react-bootstrap';
+import {Card, Row, Col, Container } from 'react-bootstrap';
 class Blog extends React.Component {
 
   constructor(props) {
@@ -36,8 +36,8 @@ class Blog extends React.Component {
       const date = post.date.toDate().toDateString()  
       console.log(date)
       return (
-        <div key={Math.random()}>
-          <Card style={{ width: '18rem' }}>
+        <Row key={Math.random()}>
+          <Card className='cardStyle'>
             <Card.Body>
               <Card.Title>{post.title}</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">{date}</Card.Subtitle>
@@ -46,14 +46,15 @@ class Blog extends React.Component {
               </Card.Text>
             </Card.Body>
           </Card>
-        </div>
+        </Row>
       )
     });
     return (
-      <div>
+      <Container>
+
         <h5>Blog Posts</h5>
         {blog_post_cards}
-      </div>
+      </Container>
     );
   }
 

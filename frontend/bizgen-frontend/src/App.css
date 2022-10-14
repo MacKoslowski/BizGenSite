@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+.iconDesc {
+  margin-top: 2em;
+  padding:3em;
+  text-align: center;
+}
+
+.imgStyle {
+  border-radius: 45px;
+  width: 300px !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em !important;
+}
+
+.cardStyle {
+  width: 300px !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+.navBarStyle {
+  background-color: #262868;
+  color: white !important
+}

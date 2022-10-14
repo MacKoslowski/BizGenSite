@@ -1,5 +1,5 @@
 import React from 'react';
-import {Form, Button} from 'react-bootstrap';
+import {Form, Button, Card, Row, Col, Container } from 'react-bootstrap';
 import { signInAnonymously } from "firebase/auth";
 import { addContactMessage, auth} from '../firebase_setup';
 class Contact extends React.Component {
@@ -18,23 +18,28 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <div>
-        <Form>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" onChange={ this.setEmail } value={ this.state.email }/>
-          </Form.Group>
+      <Container>
+        <Row>
+          <Card style={{padding:'5em'}}>
+            <h2>Contact Form</h2>
+            <Form>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type="email" onChange={ this.setEmail } value={ this.state.email }/>
+              </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Message</Form.Label>
-            <Form.Control as="textarea" rows={3} value={this.state.message} onChange={this.setMessage}/>
-          </Form.Group>
-          
-          <Button variant="primary" onClick={this.submitMessage}>
-            Submit
-          </Button>
-        </Form>
-      </div>
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label>Message</Form.Label>
+                <Form.Control as="textarea" rows={3} value={this.state.message} onChange={this.setMessage}/>
+              </Form.Group>
+              
+              <Button variant="primary" onClick={this.submitMessage}>
+                Submit
+              </Button>
+            </Form>
+          </Card>
+        </Row>
+      </Container>
     );
   }
 

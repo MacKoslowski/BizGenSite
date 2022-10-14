@@ -26,7 +26,7 @@ class App extends React.Component {
     return (
     <div >
       <Router>
-        <Navbar expand="lg" >
+        <Navbar expand="lg" className='navBarStyle'>
           <Container fluid>
           <Navbar.Brand href="#home">
               <h4>BizGen Solutions</h4>

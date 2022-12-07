@@ -41,6 +41,8 @@
   margin-top: 2em;
   padding:3em;
   text-align: center;
+  font-family: "Open Sans";
+  
 }
 
 .imgStyle {
@@ -61,6 +63,6 @@
 }
 
 .navBarStyle {
-  background-color: #262868;
-  color: white !important
+  filter: alpha(opacity=90);
+  font-family: "Open Sans";
 }

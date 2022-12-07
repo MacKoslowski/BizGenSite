@@ -16,19 +16,19 @@ function Home() {
         <Col sm={12} md={4}>
           <BsShop size={145}/>
           <p className='iconDesc'>
-            We offer a full range of small business and commercial financing options for all credit types.
+            <b>We offer a full range of small business and commercial financing options for all credit types.</b>
           </p>
         </Col>
         <Col sm={12} md={4}>
           <BsFillLightbulbFill size={145}/>
           <p className='iconDesc'> 
-            We Creatively Bring Solutions To Give You The Best Business Loan Options.
+            <b>We creatively bring solutions to give you the best business loan options.</b>
           </p>
         </Col>
         <Col sm={12} md={4}>
           <BsCashCoin size={145}/>
           <p className='iconDesc'>
-          Let Us Do The Heavy Lifting And Save You Time And Money.
+           <b>Let us do the heavy lifting and save you time and money.</b>
           </p>
         </Col>
         

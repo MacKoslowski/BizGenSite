@@ -3,7 +3,14 @@ import { Carousel, Row, Col, Container, Card, Badge } from "react-bootstrap";
 import img1 from "../cityscape.png";
 import img2 from "../stock_image.png";
 import logo from "../bizgen_logo.png";
-import { BsShop, BsFillLightbulbFill, BsCashCoin } from "react-icons/bs";
+import Blog from "./Blog";
+import Contact from "./Contact";
+import {
+  BsShop,
+  BsFillLightbulbFill,
+  BsCashCoin,
+  BsArrowDown,
+} from "react-icons/bs";
 import Image from "react-bootstrap/Image";
 function Home() {
   return (
@@ -38,8 +45,11 @@ function Home() {
         </Col>
       </Row>
       <Row>
+        <BsArrowDown size={100} />
+      </Row>
+      <Row>
         <Col>
-          <Card>
+          <Card style={{ marginTop: "7em" }}>
             <h1 id="business_loans" className="headerCenter">
               Business Loans
             </h1>
@@ -173,7 +183,7 @@ function Home() {
 
             <div className="longText">
               <h2>
-                Term Loans
+                Term Loans &nbsp;
                 <Badge pill bg="secondary">
                   New
                 </Badge>
@@ -195,6 +205,10 @@ function Home() {
           </Card>
         </Col>
       </Row>
+      <Row>
+        <Blog />
+      </Row>
+
       <Row>
         <Col>
           <Card>
@@ -238,6 +252,10 @@ function Home() {
             </div>
           </Card>
         </Col>
+      </Row>
+      <hr />
+      <Row>
+        <Contact />
       </Row>
     </Container>
   );

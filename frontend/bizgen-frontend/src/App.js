@@ -28,36 +28,26 @@ class App extends React.Component {
       <Router>
         <Navbar expand="lg" className='navBarStyle'>
           <Container fluid>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="#">
               <h4>BizGen Solutions</h4>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <LinkContainer to='/'>
-                  <Nav.Link >Home</Nav.Link>
-                </LinkContainer>
-                <LinkContainer to='/about'>
-                  <Nav.Link >About</Nav.Link>
-                </LinkContainer>
-                <LinkContainer to='/business'>
-                  <Nav.Link >Business Loans</Nav.Link>
-                </LinkContainer>
-                <LinkContainer to='/blog'>
-                  <Nav.Link >Blog</Nav.Link>
-                </LinkContainer>
-                <LinkContainer to='/contact'>
-                  <Nav.Link >Contact</Nav.Link>
-                </LinkContainer>
-                
+                  <Nav.Link href="#">Home</Nav.Link>
+                  <Nav.Link href="#business_loans">Business Loans</Nav.Link>
+                  <Nav.Link href="#about_us">About</Nav.Link>
+                  
+                  <Nav.Link href="blog">Blog</Nav.Link>
+                  <Nav.Link href="contact">Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
         <Routes>
-            <Route path="/about" element={<About/>}/>
+            
             <Route path="/" element={<Home/>}/>
-            <Route path="/business" element={<Business/>}/>
+            
             <Route path="/blog" element={<Blog/>}/>
             <Route path="/contact" element={<Contact/>}/>
         </Routes>

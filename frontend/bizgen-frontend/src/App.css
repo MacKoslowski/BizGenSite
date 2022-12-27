@@ -39,10 +39,9 @@
 
 .iconDesc {
   margin-top: 2em;
-  padding:3em;
+  padding: 3em;
   text-align: center;
   font-family: "Open Sans";
-  
 }
 
 .imgStyle {
@@ -63,6 +62,29 @@
 }
 
 .navBarStyle {
-  filter: alpha(opacity=90);
+  background: rgba(0, 0, 0, 0.5);
+  font-family: "Open Sans";
+}
+
+.navbar-brand {
+  background: rgba(56, 255, 255, 0);
+  color: white !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.headerCenter {
+  text-align: center;
+}
+
+.longText {
+  padding: 2em;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  color: white;
   font-family: "Open Sans";
 }
